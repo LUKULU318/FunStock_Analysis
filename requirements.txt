@@ -1,0 +1,33 @@
+# Dependencies Used in the Stock Data Extraction and Visualization Project
+
+This document describes the purpose of each library listed in the `requirements.txt` file, which is essential for running the project successfully.
+
+## Libraries
+
+1. **beautifulsoup4** (`==4.9.3`)
+   - **Purpose**: Used for web scraping to extract data from HTML files. In this project, it helps in scraping Tesla and GameStop quarterly revenue data from web pages.
+   - **Docs**: [BeautifulSoup Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+
+2. **pandas** (`==1.1.5`)
+   - **Purpose**: A powerful data manipulation library used for data frames, data cleaning, and analysis. It is used to store stock and revenue data, allowing for easy manipulation and filtering.
+   - **Docs**: [Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/)
+
+3. **yfinance** (`==0.1.55`)
+   - **Purpose**: A popular library that provides easy access to Yahoo Finance's stock data. It is used in the project to fetch historical stock data for Tesla, Amazon, AMD, and GameStop.
+   - **Docs**: [yfinance Documentation](https://pypi.org/project/yfinance/)
+
+4. **lxml** (`==4.6.1`)
+   - **Purpose**: A dependency for parsing XML and HTML. It’s required by `BeautifulSoup` to effectively parse the HTML structure of the web pages being scraped.
+   - **Docs**: [lxml Documentation](https://lxml.de/)
+
+5. **html5lib** (`==1.1`)
+   - **Purpose**: An HTML parser that helps `BeautifulSoup` in extracting data from complex web pages. Used for reliable web scraping in case `lxml` fails.
+   - **Docs**: [html5lib Documentation](https://html5lib.readthedocs.io/en/latest/)
+
+6. **plotly** (`==4.14.3`)
+   - **Purpose**: A graphing library used to create interactive charts and dashboards. This project uses Plotly to create visualizations for stock prices and revenue trends.
+   - **Docs**: [Plotly Documentation](https://plotly.com/python/)
+
+7. **requests** (`==2.25.0`)
+   - **Purpose**: A simple HTTP library for making requests to the web. It's used to download the HTML content of web pages for scraping.
+   - **Docs**: [Requests Documentation](https://docs.python-requests.org/en/latest/)
